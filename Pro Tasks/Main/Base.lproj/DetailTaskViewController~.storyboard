@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NjK-QS-8Er">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="home" id="BYZ-38-t0r" customClass="ViewController" customModule="Pro_Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="sg1-Pt-qUi">
+                                <rect key="frame" x="5" y="117" width="383" height="735"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ayH-a0-rzC">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="128"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="9Os-6t-WSf"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1C7-RJ-so4">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="buV-F9-ELZ">
+                                        <rect key="frame" x="0.0" y="142" width="383" height="593"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="leading" secondItem="buV-F9-ELZ" secondAttribute="leading" id="fVO-8P-cZo"/>
+                                    <constraint firstItem="ayH-a0-rzC" firstAttribute="leading" secondItem="sg1-Pt-qUi" secondAttribute="leading" id="jy1-1x-Q6y"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sg1-Pt-qUi" secondAttribute="bottom" id="81b-jZ-yYL"/>
+                            <constraint firstAttribute="trailing" secondItem="sg1-Pt-qUi" secondAttribute="trailing" constant="5" id="EsI-R2-1OU"/>
+                            <constraint firstItem="sg1-Pt-qUi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="bYK-SO-Uah"/>
+                            <constraint firstItem="sg1-Pt-qUi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="pB7-gz-UIc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="svd-N4-hcT"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ayH-a0-rzC" id="r1W-Cg-f2c"/>
+                        <outlet property="tableView" destination="buV-F9-ELZ" id="9dT-GI-7kf"/>
+                        <segue destination="Tvi-re-waW" kind="presentation" identifier="goToAdd" id="1lJ-SG-ofq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5606.8702290076335" y="-2.1126760563380285"/>
+        </scene>
+        <!--Detail Task View Controller-->
+        <scene sceneID="nyW-1y-b4l">
+            <objects>
+                <viewController storyboardIdentifier="DetailTask" id="ktb-UJ-o9W" customClass="DetailTaskViewController" customModule="Pro_Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fmy-MP-wpv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aMT-XE-u71">
+                                <rect key="frame" x="10" y="69" width="373" height="783"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-mB-3Jr">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JX8-Rq-enN"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="tintColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WHC-Pc-MOE">
+                                        <rect key="frame" x="0.0" y="70" width="373" height="713"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">. Giao diện và Layout
+Danh sách Ghi chú: Ứng dụng sử dụng một danh sách ghi chú có thể cuộn được. Danh sách này thường có dạng bảng (UITableView hoặc UICollectionView), với mỗi ô đại diện cho một ghi chú.
+
+Chi Tiết Ghi Chú: Khi bạn chọn một ghi chú, ứng dụng chuyển sang chế độ xem chi tiết (Detail View), nơi bạn có thể xem và chỉnh sửa nội dung của ghi chú. Nội dung ghi chú có thể bao gồm văn bản, hình ảnh, và các yếu tố khác.
+
+2. Nhập và Hiển Thị Nội Dung
+TextView: Để hiển thị và chỉnh sửa văn bản trong ghi chú, ứng dụng sử dụng UITextView, một thành phần UI cho phép người dùng nhập và chỉnh sửa văn bản có thể cuộn được. UITextView hỗ trợ định dạng văn bản phong phú như tiêu đề, gạch đầu dòng, và liên kết.
+
+Auto Layout: UITextView có thể mở rộng kích thước dựa trên nội dung của nó, nhờ vào Auto Layout. Auto Layout giúp điều chỉnh kích thước của UITextView và các thành phần khác trong view để phù hợp với nội dung.
+
+3. Chèn Nội Dung Đa Dạng
+Hình Ảnh và Tài Liệu: Người dùng có thể chèn hình ảnh và tài liệu vào ghi chú. Khi chèn hình ảnh, UIImageView thường được sử dụng để hiển thị hình ảnh trong nội dung văn bản.
+
+Tài Liệu và Liên Kết: Bạn có thể chèn các liên kết đến tài liệu hoặc các liên kết web vào ghi chú, giúp dễ dàng truy cập các nguồn tài liệu liên quan.
+
+4. Quản Lý Nội Dung và Định Dạng
+NSAttributedString: Để hỗ trợ các định dạng văn bản phong phú như tiêu đề, gạch đầu dòng, hoặc văn bản in đậm/nghiêng, ứng dụng có thể sử dụng NSAttributedString. Điều này cho phép kiểm soát các thuộc tính văn bản một cách linh hoạt.
+
+</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HtZ-Qi-hUg"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aMT-XE-u71" secondAttribute="bottom" id="5Cw-Mx-YtH"/>
+                            <constraint firstItem="aMT-XE-u71" firstAttribute="top" secondItem="HtZ-Qi-hUg" secondAttribute="top" constant="10" id="EVh-iR-bBA"/>
+                            <constraint firstItem="aMT-XE-u71" firstAttribute="leading" secondItem="HtZ-Qi-hUg" secondAttribute="leading" constant="10" id="WQR-73-0Zs"/>
+                            <constraint firstItem="aMT-XE-u71" firstAttribute="trailing" secondItem="HtZ-Qi-hUg" secondAttribute="trailing" constant="-10" id="qyB-yn-1yQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eTd-Bm-1eJ"/>
+                    <connections>
+                        <outlet property="NoteTask" destination="WHC-Pc-MOE" id="sPa-jk-Cq6"/>
+                        <outlet property="NoteTextView" destination="WHC-Pc-MOE" id="e94-PJ-KNE"/>
+                        <outlet property="TitleTask" destination="OF2-mB-3Jr" id="cvd-6M-0cR"/>
+                        <outlet property="TitleTextView" destination="OF2-mB-3Jr" id="mS1-Va-qSg"/>
+                        <segue destination="Tvi-re-waW" kind="presentation" identifier="goToEdit" id="LT4-XK-pou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5m-GK-4F9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6548.8549618320612" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yLH-lt-ZdL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NjK-QS-8Er" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ye9-Q0-iGK">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="71m-FZ-PGk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Iy-Lo-Lj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4680.1526717557254" y="-2.1126760563380285"/>
+        </scene>
+        <!--ActionTask-->
+        <scene sceneID="uVx-3o-8py">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ActionTask" id="Tvi-re-waW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjx-O8-Pjo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5606" y="489"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LT4-XK-pou"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Task View Controller-->
+        <scene sceneID="nyW-1y-b4l">
+            <objects>
+                <viewController storyboardIdentifier="DetailTask" id="ktb-UJ-o9W" customClass="DetailTaskViewController" customModule="Pro_Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fmy-MP-wpv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aMT-XE-u71">
+                                <rect key="frame" x="10" y="69" width="373" height="783"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-mB-3Jr">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JX8-Rq-enN"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="tintColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WHC-Pc-MOE">
+                                        <rect key="frame" x="0.0" y="70" width="373" height="713"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">. Giao diện và Layout
+Danh sách Ghi chú: Ứng dụng sử dụng một danh sách ghi chú có thể cuộn được. Danh sách này thường có dạng bảng (UITableView hoặc UICollectionView), với mỗi ô đại diện cho một ghi chú.
+
+Chi Tiết Ghi Chú: Khi bạn chọn một ghi chú, ứng dụng chuyển sang chế độ xem chi tiết (Detail View), nơi bạn có thể xem và chỉnh sửa nội dung của ghi chú. Nội dung ghi chú có thể bao gồm văn bản, hình ảnh, và các yếu tố khác.
+
+2. Nhập và Hiển Thị Nội Dung
+TextView: Để hiển thị và chỉnh sửa văn bản trong ghi chú, ứng dụng sử dụng UITextView, một thành phần UI cho phép người dùng nhập và chỉnh sửa văn bản có thể cuộn được. UITextView hỗ trợ định dạng văn bản phong phú như tiêu đề, gạch đầu dòng, và liên kết.
+
+Auto Layout: UITextView có thể mở rộng kích thước dựa trên nội dung của nó, nhờ vào Auto Layout. Auto Layout giúp điều chỉnh kích thước của UITextView và các thành phần khác trong view để phù hợp với nội dung.
+
+3. Chèn Nội Dung Đa Dạng
+Hình Ảnh và Tài Liệu: Người dùng có thể chèn hình ảnh và tài liệu vào ghi chú. Khi chèn hình ảnh, UIImageView thường được sử dụng để hiển thị hình ảnh trong nội dung văn bản.
+
+Tài Liệu và Liên Kết: Bạn có thể chèn các liên kết đến tài liệu hoặc các liên kết web vào ghi chú, giúp dễ dàng truy cập các nguồn tài liệu liên quan.
+
+4. Quản Lý Nội Dung và Định Dạng
+NSAttributedString: Để hỗ trợ các định dạng văn bản phong phú như tiêu đề, gạch đầu dòng, hoặc văn bản in đậm/nghiêng, ứng dụng có thể sử dụng NSAttributedString. Điều này cho phép kiểm soát các thuộc tính văn bản một cách linh hoạt.
+
+</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HtZ-Qi-hUg"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aMT-XE-u71" secondAttribute="bottom" id="5Cw-Mx-YtH"/>
+                            <constraint firstItem="aMT-XE-u71" firstAttribute="top" secondItem="HtZ-Qi-hUg" secondAttribute="top" constant="10" id="EVh-iR-bBA"/>
+                            <constraint firstItem="aMT-XE-u71" firstAttribute="leading" secondItem="HtZ-Qi-hUg" secondAttribute="leading" constant="10" id="WQR-73-0Zs"/>
+                            <constraint firstItem="aMT-XE-u71" firstAttribute="trailing" secondItem="HtZ-Qi-hUg" secondAttribute="trailing" constant="-10" id="qyB-yn-1yQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eTd-Bm-1eJ"/>
+                    <connections>
+                        <outlet property="NoteTask" destination="WHC-Pc-MOE" id="sPa-jk-Cq6"/>
+                        <outlet property="NoteTextView" destination="WHC-Pc-MOE" id="e94-PJ-KNE"/>
+                        <outlet property="TitleTask" destination="OF2-mB-3Jr" id="cvd-6M-0cR"/>
+                        <outlet property="TitleTextView" destination="OF2-mB-3Jr" id="mS1-Va-qSg"/>
+                        <segue destination="Tvi-re-waW" kind="presentation" identifier="goToEdit" id="LT4-XK-pou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5m-GK-4F9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6548.8549618320612" y="-2.1126760563380285"/>
+        </scene>
+        <!--ActionTask-->
+        <scene sceneID="uVx-3o-8py">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ActionTask" id="Tvi-re-waW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjx-O8-Pjo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5606" y="489"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
