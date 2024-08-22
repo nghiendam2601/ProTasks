@@ -9,7 +9,7 @@ import UIKit
 
 class TaskTableViewCell: UITableViewCell {
 
-    //MARK: - IBOutlets
+    //MARK: - IBOutlet
     @IBOutlet var ButtonTask: UIButton!
     @IBOutlet var dueDateLabel: UILabel!
     @IBOutlet var TitleLabel: UILabel!
