@@ -1,5 +1,6 @@
 # Weathery App
-![appstore](https://github.com/user-attachments/assets/350c5436-c415-493b-9753-ee97b36900fa)
+<img src="![appstore](https://github.com/user-attachments/assets/350c5436-c415-493b-9753-ee97b36900fa)
+" alt="Logo" width="80" height="80">
 
 The Weathery App is a simple yet feature-rich iOS application built using SwiftUI and follows the MVVM (Model-View-ViewModel) architecture pattern. It provides users with up-to-date weather information for a specific location by utilizing the OpenWeatherMap API. Users can search for weather conditions in various cities and view the hourly forecast for the next 4 days. 
 
