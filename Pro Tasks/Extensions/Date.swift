@@ -1,9 +1,3 @@
-//
-//  DateToString.swift
-//  Pro Tasks
-//
-//  Created by DamMinhNghien on 23/7/24.
-//
 
 import Foundation
 

@@ -1,9 +1,4 @@
-//
-//  Config.swift
-//  Pro Tasks
-//
-//  Created by DamMinhNghien on 6/8/24.
-//
+
 
 import UIKit
 

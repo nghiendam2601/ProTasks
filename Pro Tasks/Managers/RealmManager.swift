@@ -1,9 +1,3 @@
-//
-//  RealmManager.swift
-//  Pro Tasks
-//
-//  Created by DamMinhNghien on 27/7/24.
-//
 
 import Foundation
 import RealmSwift

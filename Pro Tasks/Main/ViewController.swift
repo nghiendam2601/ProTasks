@@ -1,9 +1,4 @@
-//
-//  ViewController.swift
-//  Pro Tasks
-//
-//  Created by DamMinhNghien on 18/7/24.
-//
+
 
 import UIKit
 import RealmSwift
@@ -72,9 +67,9 @@ class ViewController: UIViewController {
     //MARK: - CLV Layout
     func setupCollectionViewLayout(){
         let layout = UICollectionViewFlowLayout()
-        layout.minimumInteritemSpacing = 2 // Khoảng cách giữa các item trong cùng một hàng
+        layout.minimumInteritemSpacing = 2
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 90 , height: 128) // Kích thước của mỗi item
+        layout.itemSize = CGSize(width: 90 , height: 128) 
         collectionView.collectionViewLayout = layout
     }
     //MARK: - Setup TableView

@@ -1,9 +1,4 @@
-//
-//  DetailTaskViewController.swift
-//  Pro Tasks
-//
-//  Created by DamMinhNghien on 19/7/24.
-//
+
 
 import UIKit
 

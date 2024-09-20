@@ -1,9 +1,4 @@
-//
-//  NotificationManager.swift
-//  Pro Tasks
-//
-//  Created by DamMinhNghien on 21/8/24.
-//
+
 
 import Foundation
 import UserNotifications

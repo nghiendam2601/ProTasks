@@ -1,9 +1,4 @@
-//
-//  ScheduleTaskCollectionViewCell.swift
-//  Pro Tasks
-//
-//  Created by DamMinhNghien on 26/7/24.
-//
+
 
 import UIKit
 

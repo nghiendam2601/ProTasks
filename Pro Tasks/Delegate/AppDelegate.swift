@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  Pro Tasks
-//
-//  Created by DamMinhNghien on 18/7/24.
-//
 
 import UIKit
 import RealmSwift
@@ -14,6 +8,7 @@ import IQKeyboardManagerSwift
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
         
         _ = RealmManager.shared
         print(Realm.Configuration.defaultConfiguration.fileURL ?? "cannot open fileURL")
@@ -66,9 +61,7 @@ func application(_ application: UIApplication, configurationForConnecting connec
 }
 
 func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-    
 }
-
 
 
 
