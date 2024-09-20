@@ -1,4 +1,4 @@
-# Weathery App
+# ProTasks
 
 <img src="https://github.com/user-attachments/assets/350c5436-c415-493b-9753-ee97b36900fa" alt="Logo" width="80" height="80">
 
